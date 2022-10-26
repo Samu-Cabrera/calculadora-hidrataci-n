@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/calculator.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora de hidratación basal</title>
 </head>
 <body>
-    <div id="container">
-        <div id="calculadora">
+    <div class="contenedor">
+        <div class="calculadora">
             <div class="contenido">
-                <h1>Hidratación basal</h1>
-                <p>ingrese el peso en kg</p>
-                <input type="number" placeholder="peso en kg">
-                <button>Calcular</button>
-                <p>1600 cc</p>
+                <h1>Calculadora Basal</h1>
+                <input type="number" placeholder="peso en kg" id="peso">
+                <button id="calcular">Calcular</button>
+                <p id="resul"></p>
+                <p id="resul2"></p>
             </div>
         </div>
 
-        <div id="detalles">   
+        <div class="detalles">   
             <div class="contenido">
-                <h2>Como se calcula?</h2>
+                <h2>¿Cómo se calcula?</h2>
                 <ul>
                     <li>
-                        Cuando el niño tiene hasta 10kg: 100cc por cada kilo.
+                        Cuando el niño tiene hasta 30kg: Se utiliza el calculo de Holliday-Segar.
                     </li>
                     <li>
-                        Luego, por cada kilo arriba de 10 y hasta 20kg, se suman 50cc.
-                    </li>
-                    <li>
-                        Finalmente, por cada kilo arriba de 20kg se suman 20cc.
+                        Cuando el niño tiene más de 30kg: Se calcula la hidratación basal usando el método de superficie corporal.
                     </li>
                 </ul>
             </div>
